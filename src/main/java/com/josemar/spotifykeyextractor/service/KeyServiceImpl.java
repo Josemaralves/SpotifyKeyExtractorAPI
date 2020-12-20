@@ -1,6 +1,6 @@
 package com.josemar.spotifykeyextractor.service;
 
-import com.josemar.spotifykeyextractor.model.KeyVO;
+import com.josemar.spotifykeyextractor.model.SpotifyTokenVO;
 import com.josemar.spotifykeyextractor.webclient.SpotifyWebClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ public class KeyServiceImpl implements  KeyService{
     SpotifyWebClient spotifyWebClient;
 
     @Override
-    public Mono<String> retrieveKey() {
+    public Mono<SpotifyTokenVO> retrieveKey() {
         return spotifyWebClient.retrieveKey();
     }
 

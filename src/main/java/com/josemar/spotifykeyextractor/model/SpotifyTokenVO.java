@@ -3,7 +3,7 @@ package com.josemar.spotifykeyextractor.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class KeyVO {
+public class SpotifyTokenVO {
 
     private String accessToken;
 
